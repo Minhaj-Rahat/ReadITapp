@@ -1,0 +1,128 @@
+body {
+    background-color: whitesmoke;
+    
+}
+
+ul{
+    list-style: none;
+    margin-left: -15px;
+    
+}
+
+li{
+    margin-left: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover, a:focus, a:active{
+    color: #38BFF5;
+}
+
+hr{
+    color: white;
+}
+
+/* class tag */
+.wrapper{
+    display: flex;
+    width: 100%;
+
+    #content{
+        margin-top: 55px;
+        margin-left: 280px;
+    }
+}
+
+#top-bar{
+    position: fixed;
+    margin-left: 265px;
+    height: 65px;
+    width: 100%;
+    background: #2F3033;
+    box-shadow: 0 4px 8px -4px #000;
+
+}
+
+
+.Logo{
+    padding-top: 50px;
+    margin-top: 50px;
+    margin-left:5px;
+    
+}
+
+.Logo:hover{
+    cursor: pointer;
+}
+
+.menu-search{
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+/* id tag*/
+#sidebar {
+    width: 265px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #2F3033;
+    color:#2F3033;
+    transition: all 0.3s;
+    box-shadow: 0 4px 4px #000;
+    
+    .sidebar-header{
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .reading-menu {
+        margin-top: 15px;
+        margin-left: 10px;
+
+    }
+
+    .sub-menu, .account-menu {
+        margin-left: 10px;
+    }
+}
+
+
+.light-text{
+    color: #FFF;
+}
+
+.top-nav{
+    padding-top: .8vh;
+    display: flex;
+    justify-content: end;
+}
+
+.search-button{
+    margin-top:8px;
+    margin-left: 10px;
+    margin-right: 17%;
+}
+
+.search-button:hover{
+    color: #FFF;
+    transform: scale(1.05);
+}
+
+
+
+#search{
+    margin-top:8px;
+    max-width:450px;
+}
+
+#searchtag{
+    max-width:250px;
+}
+

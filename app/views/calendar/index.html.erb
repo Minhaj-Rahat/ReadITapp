@@ -1,0 +1,36 @@
+<html>
+    <head>
+    <title><%= @calendar or "Calendar" %></title>
+
+    <!---- import stylesheet content here----->
+    <%= stylesheet_link_tag 'calendar'%>
+
+    </head>
+
+    <body>
+        
+        <!--- Render content using the base index---->
+        <% content_for :main_content do %>
+            
+            <%= month_calendar events: @meetings do |date, meetings| %>
+                <%= date %>
+              
+                <% meetings.each do |meeting| %>
+                  <div> 
+                    <%= meeting.name %>
+                    <%= link_to 'Show', meeting %>
+                  </div>
+                <% end %>
+              <% end %>
+
+            <button id="Create New Event" onclick="location.href= 'meetings/new'" type="button">
+                 Create New Event
+             </button>
+
+        <% end %>
+        
+        <%= render template: "base" %>
+    </body>
+</html>
+
+
